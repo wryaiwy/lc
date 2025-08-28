@@ -45,6 +45,7 @@ public class EightyEight {
     }
 
     // TODO 逆向双指针
+    // 从后往前填充，不会覆盖尚未处理的元素
     private static void merge(int[] nums1, int m, int[] nums2, int n) {
         // i、j、k是指向最后一个元素
         int i = m - 1, j = n - 1, k = m + n - 1;
