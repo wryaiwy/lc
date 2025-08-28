@@ -16,7 +16,7 @@ public class BubbleSort {
 
     //封装，便于丰富利用
     public static void bubbleSort(int[] values) {   //留了个返回处理“void”
-        System.out.println("排序前，数组：" + Arrays.toString(values));
+        // System.out.println("排序前，数组：" + Arrays.toString(values));
 
         //冒泡排序的核心代码
 
@@ -34,17 +34,17 @@ public class BubbleSort {
                     //本趟发生了交换，表面该数组在本趟处于无序状态，需要继续排序
                     flag = false;
                 }
-                System.out.println("第" + i + "趟：第" + j + "次：" + Arrays.toString(values));
+                // System.out.println("第" + i + "趟：第" + j + "次：" + Arrays.toString(values));
             }
 
             //冒泡排序的优化
             if(flag){
-                System.out.println("结束排序！");    //已经交换完了，“核心代码”运行完成，第28行的“flag = false;”不会运行，所有本行打印"结束排序！"
+                // System.out.println("结束排序！");    //已经交换完了，“核心代码”运行完成，第28行的“flag = false;”不会运行，所有本行打印"结束排序！"
                 break;
             }else{
                 flag = true;    //把第二次的for循环“flag = false;”重置为本行的“flag = true;”
             }
-            System.out.println("第" + i + "趟,完成时：" + Arrays.toString(values));
+            // System.out.println("第" + i + "趟,完成时：" + Arrays.toString(values));
         }
     }
 
