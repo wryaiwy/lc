@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @Description: 颜色分类
  * @DateTime: 2025/6/17 23:06
  **/
-public class SeventyFive {
+public class LC75 {
 
     public static void main(String[] args) {
         int[] nums = {2, 0, 2, 1, 1, 0};

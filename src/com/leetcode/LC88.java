@@ -1,7 +1,5 @@
 package com.leetcode;
 
-import com.algorithms.BubbleSort;
-
 import java.util.Arrays;
 
 /**
@@ -9,7 +7,7 @@ import java.util.Arrays;
  * @Description:
  * @DateTime: 2025/8/28 11:57
  **/
-public class EightyEight {
+public class LC88 {
     /**
      * 给你两个按 非递减顺序 排列的整数数组 nums1 和 nums2，另有两个整数 m 和 n ，分别表示 nums1 和 nums2 中的元素数目。
      * 请你 合并 nums2 到 nums1 中，使合并后的数组同样按 非递减顺序 排列。

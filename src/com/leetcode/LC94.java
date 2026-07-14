@@ -9,7 +9,7 @@ import java.util.List;
  * @Description: 二叉树的中序遍历
  * @DateTime: 2025/8/27 9:41
  **/
-public class NinetyFour {
+public class LC94 {
 
     /**
      * 给定一个二叉树的根节点 root ，返回它的 中序遍历 。

@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @Description: 移动零
  * @DateTime: 2025/6/17 23:30
  **/
-public class TwoHundredAndEightyThree {
+public class LC283 {
 
     public static void main(String[] args) {
         int[] nums = {0,1,0,0,3,12};

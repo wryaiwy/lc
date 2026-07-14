@@ -9,7 +9,7 @@ import java.util.List;
  * @Description: 对链表进行插入排序
  * @DateTime: 2025/6/24 19:12
  **/
-public class OneHundredFortySeven {
+public class LC147 {
 
     //TODO 147 链表
 

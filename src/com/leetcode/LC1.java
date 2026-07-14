@@ -8,7 +8,7 @@ import java.util.HashMap;
  * @Description: 两数之和----哈希表
  * @DateTime: 2025/7/23 22:42
  **/
-public class One {
+public class LC1 {
     /*
     给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的那两个整数，并返回它们的数组下标。
     你可以假设每种输入只会对应一个答案，并且你不能使用两次相同的元素。

@@ -5,7 +5,7 @@ package com.leetcode;
  * @Description: 爬楼梯
  * @DateTime: 2025/8/26 14:22
  **/
-public class Seventy {
+public class LC70 {
 
     /*
     假设你正在爬楼梯。需要 n 阶你才能到达楼顶。

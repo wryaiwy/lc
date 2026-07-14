@@ -5,7 +5,7 @@ package com.leetcode;
  * @Description:
  * @DateTime: 2025/8/1 16:32
  **/
-public class Two {
+public class LC2 {
 
 
 }
