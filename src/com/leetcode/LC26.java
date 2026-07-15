@@ -1,5 +1,8 @@
 package com.leetcode;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @Author: wengrunyang
  * @Description:
@@ -24,9 +27,39 @@ public class LC26 {
      * 解释：函数应该返回新的长度 5 ， 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4 。不需要考虑数组中超出新长度后面的元素。
      */
 
-    private int removeDuplicates(int[] nums){
+    public static void main(String[] args) {
+        int [] nums = {0,0,1,1,1,2,2,3,3,4};
+        int k = removeDuplicates2(nums);
+        System.out.println("k = " + k);
+        System.out.print("nums = ");
+        for (int i = 0; i < k; i++) {
+            System.out.print(nums[i] + (i < k - 1 ? "," : ""));
+        }
+    }
 
-        return 0;
+    private static int removeDuplicates1(int[] nums){
+        Set<Integer> set = new HashSet<>();
+        int k = 0;  // 下一个要写入的位置
+        for (int i = 0; i < nums.length; i++) {
+            if (!set.contains(nums[i])) {   // 首次出现
+                set.add(nums[i]);
+                nums[k++] = nums[i];    // 原地写回前 k 个位置
+            }
+        }
+        return k; // 返回唯一元素的个数
+    }
+
+    //  TODO 双指针
+    private static int removeDuplicates2(int[] nums){
+        if (nums.length == 0) return 0;
+        int slow = 1; // 下一个要写入的位置（首元素必然保留）
+        for (int fast = 1; fast < nums.length; fast++) {
+            // 数组已排序，与已写入的最后一个元素比较即可
+            if (nums[fast] != nums[slow - 1]) {
+                nums[slow++] = nums[fast];
+            }
+        }
+        return slow; // 唯一元素的个数 k
     }
 
 }
