@@ -49,7 +49,7 @@ public class LC26 {
         return k; // 返回唯一元素的个数
     }
 
-    //  TODO 双指针
+    // TODO 双指针
     private static int removeDuplicates2(int[] nums){
         if (nums.length == 0) return 0;
         int slow = 1; // 下一个要写入的位置（首元素必然保留）
